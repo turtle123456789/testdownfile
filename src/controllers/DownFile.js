@@ -1,7 +1,7 @@
 const DownFile = require('../services/DownFile')
 const downFile = async (req, res) => {
     try {
-        res.download(`../sever/src/upload/${req?.query?.data}`)
+        res.download(`../src/src/upload/${req?.query?.data}`)
     } catch (e) {
         return res.status(404).json({
             message: e
